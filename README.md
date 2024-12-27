@@ -1,6 +1,8 @@
 # azure-openai-experiment
 
-Azure OpenAI を JavaScript の SDK で実行する実験用プロジェクトです。
+Azure OpenAI を JavaScript の SDK で実行する実験用プロジェクトです。ここでは例として Chat Completions に対応するモデルを使用します。
+
+https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions
 
 ## 事前準備
 
@@ -22,6 +24,8 @@ AZURE_OPENAI_DEPLOYMENT_NAME=< ④ >
 各設定値は Azure OpenAI Service の Deployment info ビューで確認できます。
 
 ![Deployment info](img/deployment-info.png)
+
+デプロイしているモデルが Chat Completions 対応であるかは、Endpoint に`/chat/completions`が含まれるかどうかでわかります。
 
 3. 依存関係をインストールします。
 
